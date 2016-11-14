@@ -3,4 +3,8 @@ class Word < ActiveRecord::Base
 
   scope :nouns, -> { where(kind: 'noun') }
   scope :adjectives, -> { where(kind: 'adjective') }
+
+  def as_json(options={})
+    self.word
+  end
 end
