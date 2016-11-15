@@ -1,9 +1,12 @@
 class WordsController < ApplicationController
   
   def index
+    @nouns = Word.nouns
+    @adjectives = Word.adjectives
+    render json: { nouns: @nouns, adjectives: @adjectives }
   end
 
-  def show
+  def edit
   end
 
   def create
