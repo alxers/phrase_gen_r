@@ -14,4 +14,10 @@ class WordsController < ApplicationController
 
   def destroy
   end
+
+  private
+
+  def word_params
+    params.require(:word).permit(:noun, :adjective)
+  end
 end
