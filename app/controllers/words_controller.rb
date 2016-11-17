@@ -6,6 +6,12 @@ class WordsController < ApplicationController
     render json: { nouns: @nouns, adjectives: @adjectives }
   end
 
+  def new
+  end
+
+  def show
+  end
+
   def edit
   end
 
