@@ -2,6 +2,6 @@
 
 <%= form_for @word do |f| %>
   <%= f.text_field :word %>
-  <%= f.select :kind, ['noun', 'adjective'] %>
+  <%= f.select :kind, [:noun, :adjective] %>
   <%= f.submit %>
 <% end %>
