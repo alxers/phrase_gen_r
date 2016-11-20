@@ -26,6 +26,8 @@ class WordsController < ApplicationController
   end
 
   def destroy
+    Word.find(params[:id]).destroy
+    redirect_to :back
   end
 
   private
