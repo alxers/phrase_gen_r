@@ -17,6 +17,12 @@ class WordsController < ApplicationController
   end
 
   def create
+    @word = Word.new(word: params[:word][:word], kind: params[:word][:kind])
+    if @word.save
+      redirect_to 'index'
+    else
+      redirect_to :back
+    end
   end
 
   def destroy
