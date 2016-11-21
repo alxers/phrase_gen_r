@@ -1,8 +1,11 @@
 class WordsController < ApplicationController
+
+  before_action :find_words, only: [:index, :all_words]
   
   def index
-    @nouns = Word.nouns
-    @adjectives = Word.adjectives
+  end
+
+  def all_words
     render json: { nouns: @nouns, adjectives: @adjectives }
   end
 
@@ -34,5 +37,10 @@ class WordsController < ApplicationController
 
   def word_params
     params.require(:word).permit(:noun, :adjective)
+  end
+
+  def find_words
+    @nouns = Word.nouns
+    @adjectives = Word.adjectives
   end
 end
