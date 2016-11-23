@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  # Fix routes
-  root 'words#index'
+  root 'words#all_words'
 
   resources :words
 end
