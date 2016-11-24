@@ -1,0 +1,18 @@
+<h3>Words list</h3>
+<table>
+  <tr>
+    <th>Nouns</th>
+    <th>Adjectives</th>
+  </tr>
+  <tr>
+    <% @nouns.each do |n| %>
+      <td><%= n.word %></td>
+    <% end %>
+  </tr>
+  <tr>
+    <% @adjectives.each do |a| %>
+      <td><%= a.word %></td>
+    <% end %>
+  </tr>
+</table>
+<%=
