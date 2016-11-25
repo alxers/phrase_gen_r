@@ -6,7 +6,10 @@ class WordsController < ApplicationController
   end
 
   def all_words
-    render json: { nouns: @nouns, adjectives: @adjectives }
+    respond_to do |format|
+      format.html
+      format.json { render json: { nouns: @nouns, adjectives: @adjectives } }
+    end
   end
 
   def new
@@ -22,7 +25,7 @@ class WordsController < ApplicationController
   def create
     @word = Word.new(word: params[:word][:word], kind: params[:word][:kind])
     if @word.save
-      redirect_to 'index'
+      redirect_to action: 'index'
     else
       redirect_to :back
     end
