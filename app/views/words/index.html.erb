@@ -1,18 +1,22 @@
 <h3>Words list</h3>
-<table>
-  <tr>
-    <th>Nouns</th>
-    <th>Adjectives</th>
-  </tr>
-  <tr>
-    <% @nouns.each do |n| %>
-      <td><%= n.word %></td>
-    <% end %>
-  </tr>
-  <tr>
-    <% @adjectives.each do |a| %>
-      <td><%= a.word %></td>
-    <% end %>
-  </tr>
-</table>
-<%=
+<%= link_to 'Add new', new_word_url %>
+<h4>Nouns</h4>
+<ul>
+  <% @nouns.each do |n| %>
+    <li>
+      <%= n.word %>
+      <%= link_to 'edit', edit_word_path(n) %>
+      <%= link_to 'delete', word_path(n), method: :delete %>    
+    </li>
+  <% end %>
+</ul>
+<h4>Adjectives</h4>
+<ul>
+  <% @adjectives.each do |a| %>
+    <li>
+      <%= a.word %>
+      <%= link_to 'edit', edit_word_path(a) %>
+      <%= link_to 'delete', word_path(a), method: :delete %> 
+    </li>
+  <% end %>
+</ul>
