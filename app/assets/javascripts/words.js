@@ -1,6 +1,6 @@
 'use strict';
 
-const WORDS_FILE_NAME = 'words_example.json';
+const WORDS_FILE_NAME = '/words.json';
 const PERSON_NAME = '%username%';
 const PERSONAL_MESSAGE = 'you are';
 const IMAGES_NUM = 16;
@@ -42,6 +42,7 @@ function init() {
     adjLen = words['adjectives'].length;
     nounLen = words['nouns'].length;
  });
+ console.log('hi')
 }
 
 init();
