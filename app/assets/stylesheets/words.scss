@@ -1,3 +1,73 @@
 // Place all the styles related to the words controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  text-align: center;
+  background: url('../img/bg1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  font-family: helvetica;
+  transition: background 300ms ease-in 200ms;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.bg-img {
+  background-size: contain;
+}
+
+.result {
+  height: 3.5em;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 1.9em;
+  padding: 20px;
+  margin: 0;
+}
+
+button {
+  background: #f26c4e;
+  font-size: 1.125em;
+  color: #ffffff;
+  border: 0;
+  width: 140px;
+  height: 40px;
+  outline: none;
+}
+
+button:hover {
+  background: #fd8a70;
+}
+
+
+@media (max-width: 737px) {
+  .result {
+    height: 4.5em;
+  }
+}
+
+@media (max-width: 500px) {
+  .result {
+    height: 7em;
+  }
+}
