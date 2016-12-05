@@ -19,6 +19,19 @@ body {
   transition: background 300ms ease-in 200ms;
   margin: 0;
   padding: 0;
+  position: relative;
+}
+
+a {
+  position: absolute;
+  right: 3em;
+  top: 1em;
+  color: rgb(206, 206, 206);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
 }
 
 .bg-img {
