@@ -1,7 +1,7 @@
 class WordsController < ApplicationController
 
   before_action :find_words, only: [:index, :all_words]
-  
+
   def index
   end
 
@@ -16,9 +16,6 @@ class WordsController < ApplicationController
     @word = Word.new
   end
 
-  def show
-  end
-
   def edit
   end
 
@@ -27,6 +24,7 @@ class WordsController < ApplicationController
     if @word.save
       redirect_to action: 'index'
     else
+      flash[:error] = @word.errors.full_messages
       redirect_to :back
     end
   end
