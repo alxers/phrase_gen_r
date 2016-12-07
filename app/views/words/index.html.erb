@@ -6,7 +6,7 @@
     <li>
       <%= n.word %>
       <%= link_to 'edit', edit_word_path(n) %>
-      <%= link_to 'delete', word_path(n), method: :delete %>
+      <%= link_to 'delete', n, method: :delete %>
     </li>
   <% end %>
 </ul>
@@ -16,7 +16,7 @@
     <li>
       <%= a.word %>
       <%= link_to 'edit', edit_word_path(a) %>
-      <%= link_to 'delete', word_path(a), method: :delete %>
+      <%= link_to 'delete', a, method: :delete %>
     </li>
   <% end %>
 </ul>
