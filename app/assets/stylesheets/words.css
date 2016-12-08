@@ -22,12 +22,16 @@ body {
   position: relative;
 }
 
-a {
+.links-area {
   position: absolute;
-  right: 3em;
+  left: 3em;
   top: 1em;
+}
+
+.links-area a {
   color: rgb(206, 206, 206);
   text-decoration: none;
+  margin-right: 10px;
 }
 
 a:hover {

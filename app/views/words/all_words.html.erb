@@ -1,7 +1,10 @@
 <% content_for :words_css do %>
     <%= stylesheet_link_tag 'words' %>
 <% end %>
-<%= link_to 'add words', new_word_path %>
+<div class="links-area">
+  <%= link_to 'all words', words_path %>
+  <%= link_to 'add new', new_word_path %>
+</div>
 <div class="center">
   <p id="content"></p>
   <button id="generator">Создать</button>
