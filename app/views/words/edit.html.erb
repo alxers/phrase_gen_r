@@ -1,0 +1,9 @@
+<h3>Edit word</h3>
+
+<%= form_for @word do |f| %>
+  <%= f.label :word %>
+  <%= f.text_field :word %>
+  <%= f.label :kind %>
+  <%= f.select :kind, [:noun, :adjective] %>
+  <%= f.submit 'Save' %>
+<% end %>
