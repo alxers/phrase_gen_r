@@ -1,7 +1,5 @@
 <h3>Add new word</h3>
 
-<%= form_for @word do |f| %>
-  <%= f.text_field :word %>
-  <%= f.select :kind, [:noun, :adjective] %>
-  <%= f.submit %>
-<% end %>
+<%= render partial: 'form' %>
+
+<%= link_to 'all words', words_path %>
