@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= yield :all_words_css %>
   <%= yield :words_css %>
 </head>
 <body>
@@ -12,6 +13,6 @@
     <div class="<%= key %>"><%= value %></div>
   <% end %>
 <%= yield %>
-<%= content_for :words %>
+
 </body>
 </html>

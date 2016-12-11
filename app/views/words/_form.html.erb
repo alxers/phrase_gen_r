@@ -1,4 +1,4 @@
-<%= form_for @word do |f| %>
+<%= form_for @word, html: { class: 'words-form' } do |f| %>
   <%= f.label :word %>
   <%= f.text_field :word %>
   <%= f.label :kind %>
