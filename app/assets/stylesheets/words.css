@@ -34,3 +34,8 @@ h3 {
 .words-form input[type="submit"]:hover {
   background: #fd8a70;
 }
+
+.word-edit {
+  width: 20%;
+  margin: 0px auto;
+}
