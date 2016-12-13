@@ -5,22 +5,36 @@ h3 {
   letter-spacing: 3px;
 }
 
-.words-form {
-  margin: 40px auto;
+.words-form-wrapper {
+  font: 18px Helvetica, Arial, sans-serif;
+  width: 20%;
+  margin: 0px auto;
+}
+
+.words-form-wrapper a {
+  color: rgb(242, 108, 78);
+  text-decoration: none;
 }
 
 .words-form input {
   font: 18px Helvetica, Arial, sans-serif;
-
   display: block;
   border: 1px solid #cecece;
-  padding: 20px;
+  padding: 12px;
   width: 300px;
   margin-bottom: 20px;
-  font-size: 18px;
   outline: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+.words-form select {
+  font: 18px Helvetica, Arial, sans-serif;
+  border: 1px solid #cecece;
+  padding: 12px;
+  width: 300px;
+  margin-bottom: 20px;
+  outline: none;
 }
 
 .words-form input[type="submit"] {
@@ -28,14 +42,9 @@ h3 {
   font: 18px Helvetica, Arial, sans-serif;
   border: none;
   color: #fff;
-  padding: 16px 40px;
+  padding: 12px 40px;
   outline: none;
 }
 .words-form input[type="submit"]:hover {
   background: #fd8a70;
-}
-
-.word-edit {
-  width: 20%;
-  margin: 0px auto;
 }
