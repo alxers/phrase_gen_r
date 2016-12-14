@@ -1,5 +1,10 @@
-<h3>Add new word</h3>
+<% content_for :words_css do %>
+    <%= stylesheet_link_tag 'words' %>
+<% end %>
+<div class="words-form-wrapper">
+  <h3>Add new word</h3>
 
-<%= render partial: 'form' %>
+  <%= render partial: 'form' %>
 
-<%= link_to 'all words', words_path %>
+  <%= link_to 'all words', words_path %>
+</div>
