@@ -48,3 +48,8 @@ h3 {
 .words-form input[type="submit"]:hover {
   background: #fd8a70;
 }
+
+.words-list-wrapper {
+  width: 50%;
+  margin: 0 auto;
+}

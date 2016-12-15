@@ -1,22 +1,31 @@
-<h3>Words list</h3>
-<%= link_to 'Add new', new_word_url %>
-<h4>Nouns</h4>
-<ul>
-  <% @nouns.each do |n| %>
-    <li>
-      <%= n.word %>
-      <%= link_to 'edit', edit_word_path(n) %>
-      <%= link_to 'delete', n, method: :delete %>
-    </li>
-  <% end %>
-</ul>
-<h4>Adjectives</h4>
-<ul>
-  <% @adjectives.each do |a| %>
-    <li>
-      <%= a.word %>
-      <%= link_to 'edit', edit_word_path(a) %>
-      <%= link_to 'delete', a, method: :delete %>
-    </li>
-  <% end %>
-</ul>
+<% content_for :words_css do %>
+    <%= stylesheet_link_tag 'words' %>
+<% end %>
+<div class="words-list-wrapper">
+  <h3>Words list</h3>
+  <%= link_to 'Add new', new_word_url %>
+  <div class="words-nouns">
+    <h4>Nouns</h4>
+    <ul>
+      <% @nouns.each do |n| %>
+        <li>
+          <%= n.word %>
+          <%= link_to 'edit', edit_word_path(n) %>
+          <%= link_to 'delete', n, method: :delete %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="words-adjectives">
+    <h4>Adjectives</h4>
+    <ul>
+      <% @adjectives.each do |a| %>
+        <li>
+          <%= a.word %>
+          <%= link_to 'edit', edit_word_path(a) %>
+          <%= link_to 'delete', a, method: :delete %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
