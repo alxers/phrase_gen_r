@@ -53,3 +53,17 @@ h3 {
   width: 50%;
   margin: 0 auto;
 }
+
+.word-add-new {
+  display: block;
+}
+
+.words-nouns {
+  float: left;
+  width: 50%;
+}
+
+.words-adjectives {
+  float: left;
+  width: 50%;
+}
