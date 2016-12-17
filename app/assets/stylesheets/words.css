@@ -5,15 +5,30 @@ h3 {
   letter-spacing: 3px;
 }
 
+a {
+  color: #a7a7a7;
+  margin-top: 20px;
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: rgb(206, 206, 206);
+}
+
+/*a:hover {
+  color:
+}*/
+
 .words-form-wrapper {
   font: 18px Helvetica, Arial, sans-serif;
-  width: 20%;
+  width: 19%;
   margin: 0px auto;
 }
 
-.words-form-wrapper a {
-  color: rgb(242, 108, 78);
-  text-decoration: none;
+.words-form {
+  border-bottom: 1px solid #a7a7a7;
 }
 
 .words-form input {
@@ -21,7 +36,7 @@ h3 {
   display: block;
   border: 1px solid #cecece;
   padding: 12px;
-  width: 300px;
+  width: 100%;
   margin-bottom: 20px;
   outline: none;
   -webkit-transition: all 0.2s ease-in-out;
@@ -32,7 +47,7 @@ h3 {
   font: 18px Helvetica, Arial, sans-serif;
   border: 1px solid #cecece;
   padding: 12px;
-  width: 300px;
+  width: 100%;
   margin-bottom: 20px;
   outline: none;
 }

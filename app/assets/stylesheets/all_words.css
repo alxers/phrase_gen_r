@@ -21,14 +21,20 @@ body {
   top: 1em;
 }
 
-.links-area a {
-  color: rgb(206, 206, 206);
-  text-decoration: none;
-  margin-right: 10px;
+a {
+  color: #a7a7a7;
+  margin-top: 20px;
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 a:hover {
-  color: #ffffff;
+  color: rgb(206, 206, 206);
+}
+
+.links-area a {
+  margin-right: 10px;
 }
 
 .bg-img {
