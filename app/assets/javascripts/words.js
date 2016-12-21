@@ -1,8 +1,8 @@
 'use strict';
 
 const WORDS_FILE_NAME = '/all_words.json';
-const PERSON_NAME = '%username%';
-const PERSONAL_MESSAGE = 'you are';
+const PERSON_NAME = '';
+const PERSONAL_MESSAGE = '';
 const IMAGES_NUM = 16;
 
 let words;
@@ -20,7 +20,7 @@ let preloadEl = document.getElementById('preload');
 
 let bgs = createBg('bg', IMAGES_NUM, 'jpg');
 
-function loadJSON(callback) {   
+function loadJSON(callback) {
 
   let xmlhttp = new XMLHttpRequest();
       xmlhttp.overrideMimeType("application/json");
@@ -30,7 +30,7 @@ function loadJSON(callback) {
           callback(xmlhttp.responseText);
         }
   };
-  xmlhttp.send(null);  
+  xmlhttp.send(null);
 }
 
 function init() {
