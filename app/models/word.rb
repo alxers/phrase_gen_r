@@ -1,4 +1,7 @@
 class Word < ActiveRecord::Base
+
+  audited
+
   validates :word, presence: true
   validates :word, uniqueness: true
   validates :kind, inclusion: { in: %w(noun adjective) }
