@@ -2,9 +2,17 @@
     <%= stylesheet_link_tag 'all_words' %>
 <% end %>
 <div class="links-area">
-  <%= link_to 'all words', words_path %>
-  <%= link_to 'add new', new_word_path %>
+  <a href="#menu" id="toggle"><span></span></a>
+
+  <div id="menu">
+    <ul>
+      <li><%= link_to 'all words', words_path %></li>
+      <li><%= link_to 'add new', new_word_path %></li>
+      <li><%= link_to 'history', '#' %></li>
+    </ul>
+  </div>
 </div>
+
 <div class="center">
   <p id="content"></p>
   <button id="generator">Create</button>
