@@ -33,10 +33,6 @@ a:hover {
   color: rgb(206, 206, 206);
 }
 
-.links-area a {
-  /*margin-right: 10px;*/
-}
-
 /*Menu toggle*/
 #toggle {
   display: block;
