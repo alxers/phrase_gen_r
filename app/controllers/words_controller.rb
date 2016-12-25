@@ -13,6 +13,10 @@ class WordsController < ApplicationController
     end
   end
 
+  def history
+    @words = Word.all
+  end
+
   def new
     @word = Word.new
   end

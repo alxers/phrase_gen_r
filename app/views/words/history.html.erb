@@ -1,0 +1,10 @@
+<% @words.each do |word| %>
+  <% if word.audits.present? %>
+    <p>
+      Original word
+      <%= word.word %>
+    </p>
+    Changes
+    <%= word.audits.last.audited_changes['word'].flatten %>
+  <% end %>
+<% end %>
