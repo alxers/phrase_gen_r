@@ -1,3 +1,7 @@
+<% content_for :words_css do %>
+    <%= stylesheet_link_tag 'words' %>
+<% end %>
+<h3>History</h3>
 <% @words.each do |word| %>
   <% if word.audits.present? %>
     <p>
