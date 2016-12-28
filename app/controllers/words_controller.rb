@@ -25,9 +25,10 @@ class WordsController < ApplicationController
   end
 
   def update
-    if @word.update_attributes(word_params)
+    if @word.update_attributes(word: params[:word][:word], kind: params[:word][:kind])
       redirect_to action: :all_words
     else
+      flash[:error] = @word.errors.full_messages
       render action: :edit
     end
   end
