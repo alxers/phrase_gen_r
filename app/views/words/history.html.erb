@@ -10,10 +10,10 @@
   </tr>
 
     <% @words.each do |word| %>
-      <% if word.audits.present? %>
+      <% if word.audits.present? && word.audits.last.audited_changes['word'].is_a?(Array) %>
         <tr>
           <td><%= word.word %></td>
-          <td><%= word.audits.last.audited_changes['word'] %></td>
+          <td><%= word.audits.last.audited_changes['word'].join(', ') %></td>
         </tr>
       <% end %>
     <% end %>
