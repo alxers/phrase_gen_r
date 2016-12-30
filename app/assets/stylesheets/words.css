@@ -69,6 +69,10 @@ a:hover {
   margin: 0 auto;
 }
 
+.words-list-wrapper table {
+  width: 100%;
+}
+
 .word-add-new {
   display: block;
 }

@@ -1,21 +1,24 @@
 <% content_for :words_css do %>
     <%= stylesheet_link_tag 'words' %>
 <% end %>
-<h3>History</h3>
 
-<table>
-  <tr>
-    <th>Original word</th>
-    <th>Changes</th>
-  </tr>
+<div class="words-list-wrapper">
+  <h3>History</h3>
+  
+  <table>
+    <tr>
+      <th>Original word</th>
+      <th>Changes</th>
+    </tr>
 
-    <% @words.each do |word| %>
-      <% if word.audits.present? && word.audits.last.audited_changes['word'].is_a?(Array) %>
-        <tr>
-          <td><%= word.word %></td>
-          <td><%= word.audits.last.audited_changes['word'].join(', ') %></td>
-        </tr>
+      <% @words.each do |word| %>
+        <% if word.audits.present? && word.audits.last.audited_changes['word'].is_a?(Array) %>
+          <tr>
+            <td><%= word.word %></td>
+            <td><%= word.audits.last.audited_changes['word'].join(', ') %></td>
+          </tr>
+        <% end %>
       <% end %>
-    <% end %>
 
-</table>
+  </table>
+</div>
