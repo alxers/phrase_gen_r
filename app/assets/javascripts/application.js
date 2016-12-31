@@ -11,3 +11,4 @@
 // about supported directives.
 //
 //= require jquery_ujs
+//= require main

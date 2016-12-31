@@ -1,17 +1,6 @@
 <% content_for :all_words_css do %>
     <%= stylesheet_link_tag 'all_words' %>
 <% end %>
-<div class="links-area">
-  <a href="#menu" id="toggle"><span></span></a>
-
-  <div id="menu">
-    <ul>
-      <li><%= link_to 'all words', words_path %></li>
-      <li><%= link_to 'add new', new_word_path %></li>
-      <li><%= link_to 'history', history_path %></li>
-    </ul>
-  </div>
-</div>
 
 <div class="center">
   <p id="content"></p>
