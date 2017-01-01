@@ -15,12 +15,6 @@ body {
   position: relative;
 }
 
-.links-area {
-  position: absolute;
-  left: 3em;
-  top: 1em;
-}
-
 a {
   color: #a7a7a7;
   margin-top: 20px;
