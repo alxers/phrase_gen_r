@@ -19,6 +19,10 @@ gem 'audited', '~> 4.3'
 group :development, :test do
   gem 'pry'
   gem 'web-console', '~> 2.0'
+  gem 'capistrano', '~> 3.7', '>= 3.7.1'
+  gem 'capistrano-rails', '~> 1.2'
+  gem 'capistrano-passenger', '~> 0.2.0'
+  gem 'capistrano-rbenv', '~> 2.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

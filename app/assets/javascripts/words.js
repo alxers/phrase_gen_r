@@ -77,7 +77,7 @@ function preloadImgs(imgs) {
 }
 
 
-preloadImgs(bgs);
+//preloadImgs(bgs);
 
 function prepareImages(img) {
   let imgs = imgs ? imgs : [];
