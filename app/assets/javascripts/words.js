@@ -24,10 +24,10 @@ function loadJSON(callback) {
 
   let xmlhttp = new XMLHttpRequest();
       xmlhttp.overrideMimeType("application/json");
-  xmlhttp.open('GET', WORDS_FILE_NAME, true);
-  xmlhttp.onreadystatechange = function () {
-        if (xmlhttp.readyState == 4 && xmlhttp.status == "200") {
-          callback(xmlhttp.responseText);
+      xmlhttp.open('GET', WORDS_FILE_NAME, true);
+      xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == "200") {
+              callback(xmlhttp.responseText);
         }
   };
   xmlhttp.send(null);
@@ -94,7 +94,7 @@ function startSlideShow() {
   }, 10000)
 }
 
-startSlideShow();
+// startSlideShow();
 
 function randNumFromArray(len) {
   return parseInt(Math.random() * len);
