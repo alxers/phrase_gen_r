@@ -5,7 +5,7 @@ html, body {
 body {
   display: flex;
   text-align: center;
-  background: url('bg1.jpg') no-repeat center center fixed;
+  background: asset_url('bg1.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #ffffff;
   font-family: helvetica;

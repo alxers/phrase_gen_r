@@ -4,6 +4,7 @@ gem 'rails', '4.2.3'
 #gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'audited', '~> 4.3'
+gem 'sass'
 
 
 # Use ActiveModel has_secure_password
