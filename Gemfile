@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.3'
-gem 'sqlite3'
 #gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'audited', '~> 4.3'
@@ -23,6 +22,11 @@ group :development, :test do
   gem 'capistrano-rails', '~> 1.2'
   gem 'capistrano-passenger', '~> 0.2.0'
   gem 'capistrano-rbenv', '~> 2.1'
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
