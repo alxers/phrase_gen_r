@@ -36,7 +36,8 @@ class WordsController < ApplicationController
   def create
     @word = Word.new(word: params[:word][:word], kind: params[:word][:kind])
     if @word.save
-      redirect_to action: :index
+      flash[:message] = "#{@word.word} has been added"
+      redirect_to :back
     else
       flash[:error] = @word.errors.full_messages
       redirect_to :back

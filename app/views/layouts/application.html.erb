@@ -9,6 +9,7 @@
   <%= yield :words_css %>
 </head>
 <body>
+  <!-- TODO: fix css for errors -->
   <% flash.each do |key, value| %>
     <div class="<%= key %>"><%= value %></div>
   <% end %>
