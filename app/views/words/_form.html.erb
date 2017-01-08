@@ -1,5 +1,5 @@
 <%= form_for @word, html: { class: 'words-form' } do |f| %>
   <%= f.text_field :word, placeholder: 'word' %>
-  <%= f.select :kind, [:noun, :adjective] %>
+  <%= f.select :kind, [:noun, :adjective], selected: @word.kind || Word.default_value %>
   <%= f.submit 'Save' %>
 <% end %>

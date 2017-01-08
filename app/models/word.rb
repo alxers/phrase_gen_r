@@ -9,6 +9,10 @@ class Word < ActiveRecord::Base
   scope :nouns, -> { where(kind: :noun) }
   scope :adjectives, -> { where(kind: :adjective) }
 
+  def self.default_value
+    last.try(:kind) || :noun
+  end
+
   def as_json(options={})
     self.word
   end
