@@ -21,7 +21,7 @@ a:hover {
   color: rgb(206, 206, 206);
 }
 
-.words-form-wrapper {
+.words-form-wrapper, .message {
   font: 18px Helvetica, Arial, sans-serif;
   width: 19%;
   margin: 0px auto;
