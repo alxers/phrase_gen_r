@@ -21,10 +21,21 @@ a:hover {
   color: rgb(206, 206, 206);
 }
 
-.words-form-wrapper, .message {
+.words-form-wrapper, .message, .error {
   font: 18px Helvetica, Arial, sans-serif;
   width: 19%;
   margin: 0px auto;
+}
+
+.message, .error {
+  background: rgb(115, 173, 33) none repeat scroll 0% 0%;
+  padding: 9px;
+  border-radius: 15px;
+  color: white;
+}
+
+.error {
+  background: #CC0000;
 }
 
 .words-form {

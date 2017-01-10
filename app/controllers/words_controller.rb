@@ -39,7 +39,7 @@ class WordsController < ApplicationController
       flash[:message] = "#{@word.word} has been added"
       redirect_to :back
     else
-      flash[:error] = @word.errors.full_messages
+      flash[:error] = @word.errors.full_messages.join(',')
       redirect_to :back
     end
   end
