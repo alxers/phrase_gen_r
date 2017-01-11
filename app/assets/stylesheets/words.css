@@ -30,7 +30,6 @@ a:hover {
 .message, .error {
   background: rgb(115, 173, 33) none repeat scroll 0% 0%;
   padding: 9px;
-  border-radius: 15px;
   color: white;
 }
 
